@@ -1,18 +1,8 @@
-import React from "react";
-import { Grid, Stack, Typography, Box } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import styles from "./Banner.module.css";
-import { Carousel, ScrollingCarousel } from "@trendyol-js/react-carousel";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-  DotGroup,
-  Dot,
-} from "pure-react-carousel";
+import { CarouselProvider, DotGroup, Slide, Slider } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import styles from "./Banner.module.css";
 
 const Banner = () => {
   return (
@@ -328,22 +318,6 @@ const Banner = () => {
                 position: "absolute",
               }}
             >
-              {/* <Stack
-                alignItems="center"
-                justifyContent="center"
-                bgcolor={"pink"}
-                flexDirection="row"
-              >
-                <Dot
-                  style={{ borderRadius: 999, height: 20, width: 20 }}
-                  slide={0}
-                  
-                />
-                <Dot
-                  style={{ borderRadius: 999, height: 20, width: 20 }}
-                  slide={2}
-                />
-              </Stack> */}
               <DotGroup
                 renderDots={({ totalSlides, currentSlide }) => (
                   <Stack alignItems="center" flexDirection="row">

@@ -1,8 +1,7 @@
-import React from "react";
-import { Stack, TextField, Typography, Box, Grid } from "@mui/material";
-import { IFormInput } from "./types";
-import { Controller, useFormContext } from "react-hook-form";
+import { Grid, Stack, TextField, Typography } from "@mui/material";
 import Image from "next/image";
+import { Controller, useFormContext } from "react-hook-form";
+import { IFormInput } from "./types";
 
 const FormInput: IFormInput = ({ name, label, type }) => {
   const { control } = useFormContext();

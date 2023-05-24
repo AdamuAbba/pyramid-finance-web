@@ -1,23 +1,13 @@
-import {
-  Box,
-  Button,
-  Checkbox,
-  FormControlLabel,
-  Grid,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Button, Grid, Stack, Typography } from "@mui/material";
 import { FormInput } from "@src/components/global";
 import {
   LOGIN_FORM_VALIDATION_SCHEMA,
   LoginFormType,
 } from "@src/lib/schemas/login-form-schema";
-import { theme } from "@src/theme";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { FormProvider, useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
 
 const LoginForm = () => {
   const methods = useForm<LoginFormType>({
@@ -266,7 +256,7 @@ const LoginForm = () => {
               <Stack direction="column">
                 <Stack spacing={1} alignSelf="center" direction="row">
                   <Typography variant="body1">
-                    Don't have an account?
+                    Don&#39;t have an account?
                   </Typography>
                   <Link
                     style={{
